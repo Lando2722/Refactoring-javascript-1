@@ -22,6 +22,16 @@ function generatePassword(){
   if (uppercasechar){
     options+=uppercase
   }
+  var numberchar=confirm("do you want to use a number?")
+  var number="0123456789"
+  if (numberchar){
+    options+=number
+  }
+  var specialchar=confirm("Do you want any special characters included?")
+  var special=" !#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+  if (specialchar){
+    options+=special
+  } 
 
 
   var password=""
